@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+//program of ps
 void printer(int lines);
 void printerline(int i);
 
