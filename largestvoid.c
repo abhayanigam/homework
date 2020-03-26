@@ -9,7 +9,6 @@ int main()
 
      for (int i = 0; i <size; i++)
     {
-        int myarray[i];
         printf("enter the values of element:");
         scanf("%d",&myarray[i]);
     }
