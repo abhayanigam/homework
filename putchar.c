@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main()
 //Putchar
-//prototype int putchar(int ch)
+//prototype:- int putchar(int ch)
 //A = 65 ASCII value to Z = 90
 {
     int ch;
