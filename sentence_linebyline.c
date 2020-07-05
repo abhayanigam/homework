@@ -1,13 +1,16 @@
 #include <stdio.h>
+#include <string.h>
 int main()
 {
-    char ch,s[10],sen[100];
-    scanf("%c",&ch);
-    scanf("%s",s);
-    scanf("\n");
-    scanf("%[^\n]%*c",sen);
-    printf("%c\n",ch);
-    printf("%s\n",s);
-    printf("%s\n",sen);
-    return 0;
+    char c[100];
+    printf("Enter the sentence:");
+    fgets(c,100,stdin);
+    for (int i=0; i<=strlen(c); i++) {
+        if (c[i]==' ') {
+            printf("\n");
+        }
+        else{
+            printf("%c",c[i]);
+        }
+    }
 }
