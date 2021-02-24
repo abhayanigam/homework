@@ -1,5 +1,6 @@
 //Simple assistant.
 #include <stdio.h>
+#include <string.h>
 #include <stdlib.h>
 char sign(char name[15]);
 char enteries(char ent[5]);
@@ -14,7 +15,7 @@ start:
     {
         goto start;
     }
-    sing(name);
+    sign(name);
 run:
     printf("for webpage search type (web) and for software type (soft) :");
     scanf("%s", ent);
@@ -38,12 +39,12 @@ run:
 char sign(char name[15])
 {
     printf("So, for better understanding please tell me your name :");
-    scanf("%[^\n]%*c", name);
+    scanf("%s", name);
     printf("\n");
     printf("hey !! %s nice to meet you.\n", name);
     printf("So, My name is Nametina the smart type assistant\nI can open any web page and software for you.\n");
     printf("\n");
-    printf("if you want to open just write the website name a or software name.\n");
+    printf("if you want to open just write the website name or software name.\n");
 }
 char enteries(char use[5])
 {
